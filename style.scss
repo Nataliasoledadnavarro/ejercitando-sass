@@ -1,0 +1,83 @@
+$color-principal: #dc2c76;
+$color-letra-oscuro: #2f0416;
+$sombra: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$color-precio: #7f09f5;
+
+@mixin centrado($direccion: column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direccion;
+}
+
+@mixin tarjeta() {
+  width: 18%;
+  height: 400px;
+  box-shadow: $sombra;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+@mixin posicion-icono() {
+  position: relative;
+  bottom: 190px;
+  left: 80px;
+  font-size: 18px;
+}
+
+body {
+  @include centrado($direccion: column);
+}
+
+h1{
+    color: $color-principal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor-tarjetas {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.tarjeta {
+  @include tarjeta();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  i {
+    @include posicion-icono();
+    color: $color-principal;
+    background-color: white;
+    border-radius: 50px;
+    padding: 7px;
+  }
+}
+
+.contenedor-img {
+  width: 90%;
+  height: 50%;
+  margin-top: 8px;
+  // overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.informacion {
+  width: 90%;
+  h3 {
+    color: $color-principal;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  p {
+    color: $color-letra-oscuro;
+  }
+  .precio {
+    color: $color-precio;
+  }
+}

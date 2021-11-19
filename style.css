@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #dc2c76;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contenedor-tarjetas {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  width: 18%;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta i {
+  position: relative;
+  bottom: 190px;
+  left: 80px;
+  font-size: 18px;
+  color: #dc2c76;
+  background-color: white;
+  border-radius: 50px;
+  padding: 7px;
+}
+
+.contenedor-img {
+  width: 90%;
+  height: 50%;
+  margin-top: 8px;
+}
+.contenedor-img img {
+  width: 100%;
+}
+
+.informacion {
+  width: 90%;
+}
+.informacion h3 {
+  color: #dc2c76;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.informacion p {
+  color: #2f0416;
+}
+.informacion .precio {
+  color: #7f09f5;
+}
+
+/*# sourceMappingURL=style.css.map */
